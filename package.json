@@ -1,0 +1,35 @@
+{
+  "name": "one_bar",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT-0",
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "tsc && vp build",
+    "db:apply": "node scripts/apply-supabase-schema.mjs",
+    "preview": "vp preview",
+    "prepare": "vp config"
+  },
+  "dependencies": {
+    "@fontsource/vt323": "^5.2.7",
+    "@supabase/supabase-js": "^2.103.3",
+    "@tanstack/query-sync-storage-persister": "^5.99.1",
+    "@tanstack/react-query": "^5.99.1",
+    "@tanstack/react-query-persist-client": "^5.99.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vanilla-extract/css": "^1.20.1",
+    "@vanilla-extract/vite-plugin": "^5.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "pg": "^8.20.0",
+    "typescript": "~6.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
